@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Jobs - PathStarter</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>PathStarter</h2></a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="jobs.html" class="nav-link">Find Jobs</a>
+                <a href="companies.html" class="nav-link">Company Reviews</a>
+                <a href="employer-post-job.html" class="nav-link">Post a Job</a>
+                <a href="login.html" class="nav-link login-btn">Sign In</a>
+                <a href="signup.html" class="nav-link p-btn">Sign Up</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="job-search-header">
+        <div class="container">
+            <h1>Find Your Next Opportunity</h1>
+            <p>Discover millions of jobs from thousands of companies</p>
+            <div class="hero-search">
+                <div class="search-container">
+                    <input type="text" placeholder="Job title, keywords, or company" class="search-input">
+                    <input type="text" placeholder="City, state, zip code, or 'remote'" class="location-input">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                        Search Jobs
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="jobs-filters">
+        <div class="container">
+            <div class="filters-row">
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option>All Job Types</option>
+                        <option>Full-time</option>
+                        <option>Part-time</option>
+                        <option>Contract</option>
+                        <option>Internship</option>
+                        <option>Freelance</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>All Experience Levels</option>
+                        <option>Entry Level</option>
+                        <option>Mid Level</option>
+                        <option>Senior Level</option>
+                        <option>Executive</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>All Industries</option>
+                        <option>Technology</option>
+                        <option>Healthcare</option>
+                        <option>Finance</option>
+                        <option>Marketing</option>
+                        <option>Education</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>Date Posted</option>
+                        <option>Last 24 hours</option>
+                        <option>Last 3 days</option>
+                        <option>Last week</option>
+                        <option>Last month</option>
+                    </select>
+                </div>
+                <div class="sort-options">
+                    <label>Sort by:</label>
+                    <select class="sort-select">
+                        <option>Relevance</option>
+                        <option>Date</option>
+                        <option>Salary</option>
+                        <option>Company</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="jobs-results">
+        <div class="container">
+            <div class="results-header">
+                <h2>2,847 jobs found</h2>
+                <p class="results-subtitle">Showing results for your search</p>
+            </div>
+            
+            <div class="jobs-list">
+                <!-- Repeat similar job cards as in index.html but with more detailed view -->
+                <div class="job-card large">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <div class="job-info">
+                            <h3>iOS Developer Intern</h3>
+                            <p class="company">Apple Inc.</p>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Cupertino, CA • On-site</p>
+                        </div>
+                        <div class="job-actions">
+                            <button class="save-btn"><i class="far fa-heart"></i></button>
+                            <div class="job-type">Internship</div>
+                        </div>
+                    </div>
+                    <div class="job-details">
+                        <p>Join Apple's iOS development team and contribute to apps used by millions worldwide. Work on cutting-edge mobile technologies and learn from industry experts.</p>
+                        <div class="job-meta">
+                            <span class="meta-item"><i class="fas fa-briefcase"></i> 0-1 years experience</span>
+                            <span class="meta-item"><i class="fas fa-clock"></i> Posted 2 days ago</span>
+                            <span class="meta-item"><i class="fas fa-eye"></i> 234 applications</span>
+                        </div>
+                        <div class="job-tags">
+                            <span class="tag">Swift</span>
+                            <span class="tag">iOS</span>
+                            <span class="tag">Xcode</span>
+                            <span class="tag">SwiftUI</span>
+                        </div>
+                        <div class="job-footer">
+                            <span class="salary">$45-55/hour</span>
+                            <button class="apply-btn">Easy Apply</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More job listings would go here -->
+                <div class="job-card large">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="job-info">
+                            <h3>Data Analyst</h3>
+                            <p class="company">GitHub</p>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Los Gatos, CA • Remote</p>
+                        </div>
+                        <div class="job-actions">
+                            <button class="save-btn"><i class="far fa-heart"></i></button>
+                            <div class="job-type">Full-time</div>
+                        </div>
+                    </div>
+                    <div class="job-details">
+                        <p>Analyze viewer data and content performance to drive strategic decisions. Work with large datasets to uncover insights that shape content strategy.</p>
+                        <div class="job-meta">
+                            <span class="meta-item"><i class="fas fa-briefcase"></i> 1-3 years experience</span>
+                            <span class="meta-item"><i class="fas fa-clock"></i> Posted 1 day ago</span>
+                            <span class="meta-item"><i class="fas fa-eye"></i> 156 applications</span>
+                        </div>
+                        <div class="job-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Tableau</span>
+                            <span class="tag">Statistics</span>
+                        </div>
+                        <div class="job-footer">
+                            <span class="salary">$85k-110k/year</span>
+                            <button class="apply-btn">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job-card large">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fab fa-airbnb"></i>
+                        </div>
+                        <div class="job-info">
+                            <h3>UX Designer</h3>
+                            <p class="company">Airbnb</p>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> San Francisco, CA • Hybrid</p>
+                        </div>
+                        <div class="job-actions">
+                            <button class="save-btn"><i class="far fa-heart"></i></button>
+                            <div class="job-type">Contract</div>
+                        </div>
+                    </div>
+                    <div class="job-details">
+                        <p>Design exceptional user experiences for Airbnb's platform. Collaborate with cross-functional teams to create intuitive and delightful product experiences.</p>
+                        <div class="job-meta">
+                            <span class="meta-item"><i class="fas fa-briefcase"></i> 2-4 years experience</span>
+                            <span class="meta-item"><i class="fas fa-clock"></i> Posted 5 days ago</span>
+                            <span class="meta-item"><i class="fas fa-eye"></i> 89 applications</span>
+                        </div>
+                        <div class="job-tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">Design Systems</span>
+                            <span class="tag">User Research</span>
+                            <span class="tag">Prototyping</span>
+                        </div>
+                        <div class="job-footer">
+                            <span class="salary">$70-90/hour</span>
+                            <button class="apply-btn">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button class="page-btn" disabled>Previous</button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+                <button class="page-btn">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PathStarter</h3>
+                    <p>The world's leading job site for students and recent graduates.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/path-starter-75424137b"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/Pathstarter8"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/pathstarter8/"><i class="fab fa-instagram"></i></a>
+                        <a href="http://tiktok.com/@pathstarter8"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Job Seekers</h4>
+                    <ul>
+                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="companies.html">Browse Companies</a></li>
+                        <li><a href="resume-builder.html">Resume Builder</a></li>
+                        <li><a href="career-advice.html">Career Advice</a></li>
+                        <li><a href="post-resume.html">Post Your Resume</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Employers</h4>
+                    <ul>
+                        <li><a href="employer-post-job.html">Post a Job</a></li>
+                        <li><a href="browse-resumes.html">Browse Resumes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="help-center.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PathStarter. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

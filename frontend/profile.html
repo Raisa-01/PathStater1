@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - PathStarter</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>PathStarter</h2></a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="jobs.html" class="nav-link">Find Jobs</a>
+                <a href="companies.html" class="nav-link">Company Reviews</a>
+                <a href="employer-post-job.html" class="nav-link">Post a Job</a>
+                <a href="#" class="nav-link" id="user-name">Profile</a>
+                <a href="#" class="nav-link logout-btn" id="logout-btn">Sign Out</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="profile-info">
+                    <h1 id="profile-name">Welcome Back!</h1>
+                    <p id="profile-email">user@example.com</p>
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Applications</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Saved Jobs</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Interviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-actions">
+                    <button class="btn-primary edit-profile-btn">Edit Profile</button>
+                    <button class="btn-secondary view-resume-btn">View Resume</button>
+                </div>
+            </div>
+
+            <div class="profile-content">
+                <div class="profile-main">
+                    <!-- Recent Applications -->
+                    <div class="profile-card">
+                        <div class="card-header">
+                            <h3>Recent Applications</h3>
+                            <a href="jobs.html" class="view-all-link">View All</a>
+                        </div>
+                        <div class="applications-list">
+                            <div class="application-item">
+                                <div class="company-logo">
+                                    <i class="fab fa-microsoft"></i>
+                                </div>
+                                <div class="application-details">
+                                    <h4>Software Developer Intern</h4>
+                                    <p>Microsoft Corporation</p>
+                                    <span class="application-date">Applied 2 days ago</span>
+                                </div>
+                                <div class="application-status status-pending">
+                                    <i class="fas fa-clock"></i>
+                                    Pending
+                                </div>
+                            </div>
+                            <div class="application-item">
+                                <div class="company-logo">
+                                    <i class="fab fa-google"></i>
+                                </div>
+                                <div class="application-details">
+                                    <h4>Data Science Intern</h4>
+                                    <p>Google LLC</p>
+                                    <span class="application-date">Applied 5 days ago</span>
+                                </div>
+                                <div class="application-status status-reviewed">
+                                    <i class="fas fa-eye"></i>
+                                    Reviewed
+                                </div>
+                            </div>
+                            <div class="application-item">
+                                <div class="company-logo">
+                                    <i class="fab fa-figma"></i>
+                                </div>
+                                <div class="application-details">
+                                    <h4>UX Design Intern</h4>
+                                    <p>Figma Inc.</p>
+                                    <span class="application-date">Applied 1 week ago</span>
+                                </div>
+                                <div class="application-status status-interview">
+                                    <i class="fas fa-calendar-check"></i>
+                                    Interview Scheduled
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Saved Jobs -->
+                    <div class="profile-card">
+                        <div class="card-header">
+                            <h3>Saved Jobs</h3>
+                            <a href="jobs.html" class="view-all-link">View All</a>
+                        </div>
+                        <div class="saved-jobs-list">
+                            <div class="saved-job-item">
+                                <div class="job-info">
+                                    <h4>Frontend Developer</h4>
+                                    <p>GitHub Inc. • San Francisco, CA</p>
+                                    <span class="job-type">Part-time</span>
+                                </div>
+                                <div class="job-actions">
+                                    <button class="apply-btn">Apply Now</button>
+                                    <button class="remove-btn"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </div>
+                            <div class="saved-job-item">
+                                <div class="job-info">
+                                    <h4>Marketing Intern</h4>
+                                    <p>Spotify • New York, NY</p>
+                                    <span class="job-type">Internship</span>
+                                </div>
+                                <div class="job-actions">
+                                    <button class="apply-btn">Apply Now</button>
+                                    <button class="remove-btn"><i class="fas fa-trash"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-sidebar">
+                    <!-- Profile Completion -->
+                    <div class="profile-card">
+                        <h3>Profile Completion</h3>
+                        <div class="completion-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%;"></div>
+                            </div>
+                            <span class="progress-text">75% Complete</span>
+                        </div>
+                        <div class="completion-items">
+                            <div class="completion-item completed">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Basic Information</span>
+                            </div>
+                            <div class="completion-item completed">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Resume Upload</span>
+                            </div>
+                            <div class="completion-item">
+                                <i class="fas fa-circle"></i>
+                                <span>Add Skills</span>
+                            </div>
+                            <div class="completion-item">
+                                <i class="fas fa-circle"></i>
+                                <span>Work Experience</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="profile-card">
+                        <h3>Quick Actions</h3>
+                        <div class="quick-actions">
+                            <a href="resume-builder.html" class="action-item">
+                                <i class="fas fa-file-alt"></i>
+                                <span>Build Resume</span>
+                            </a>
+                            <a href="jobs.html" class="action-item">
+                                <i class="fas fa-search"></i>
+                                <span>Find Jobs</span>
+                            </a>
+                            <a href="career-advice.html" class="action-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Career Tips</span>
+                            </a>
+                            <a href="companies.html" class="action-item">
+                                <i class="fas fa-building"></i>
+                                <span>Company Reviews</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Job Alerts -->
+                    <div class="profile-card">
+                        <h3>Job Alert Settings</h3>
+                        <div class="alert-settings">
+                            <div class="alert-item">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                                <span>Email Notifications</span>
+                            </div>
+                            <div class="alert-item">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                                <span>Weekly Job Digest</span>
+                            </div>
+                            <div class="alert-item">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <span>SMS Alerts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PathStarter</h3>
+                    <p>The world's leading job site for students and recent graduates. Find your path to success.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/path-starter-75424137b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/Pathstarter8"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/pathstarter8/"><i class="fab fa-instagram"></i></a>
+                        <a href="http://tiktok.com/@pathstarter8"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Job Seekers</h4>
+                    <ul>
+                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="companies.html">Browse Companies</a></li>
+                        <li><a href="resume-builder.html">Resume Builder</a></li>
+                        <li><a href="career-advice.html">Career Advice</a></li>
+                        <li><a href="post-resume.html">Post Your Resume</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Employers</h4>
+                    <ul>
+                        <li><a href="employer-post-job.html">Post a Job</a></li>
+                        <li><a href="browse-resumes.html">Browse Resumes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="help-center.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PathStarter. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Load user profile data
+        document.addEventListener('DOMContentLoaded', () => {
+            const userEmail = localStorage.getItem('userEmail');
+            const isLoggedIn = localStorage.getItem('userLoggedIn') === 'true';
+            
+            if (!isLoggedIn) {
+                window.location.href = 'login.html';
+                return;
+            }
+            
+            if (userEmail) {
+                document.getElementById('profile-email').textContent = userEmail;
+                document.getElementById('profile-name').textContent = `Welcome, ${userEmail.split('@')[0]}!`;
+                document.getElementById('user-name').textContent = userEmail.split('@')[0];
+            }
+            
+            // Logout functionality
+            document.getElementById('logout-btn').addEventListener('click', (e) => {
+                e.preventDefault();
+                localStorage.removeItem('userLoggedIn');
+                localStorage.removeItem('userEmail');
+                showNotification('You have been logged out successfully.', 'info');
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 1000);
+            });
+        });
+
+        // Notification System (same as in script.js)
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = `notification notification-${type}`;
+            notification.innerHTML = `
+                <div class="notification-content">
+                    <span class="notification-icon">
+                        ${type === 'success' ? '✓' : type === 'error' ? '✗' : 'ℹ'}
+                    </span>
+                    <span class="notification-message">${message}</span>
+                    <button class="notification-close">&times;</button>
+                </div>
+            `;
+            
+            document.body.appendChild(notification);
+            
+            const closeBtn = notification.querySelector('.notification-close');
+            closeBtn.addEventListener('click', () => {
+                notification.style.animation = 'slideOutRight 0.3s ease';
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.parentNode.removeChild(notification);
+                    }
+                }, 300);
+            });
+            
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.style.animation = 'slideOutRight 0.3s ease';
+                    setTimeout(() => {
+                        if (notification.parentNode) {
+                            notification.parentNode.removeChild(notification);
+                        }
+                    }, 300);
+                }
+            }, 5000);
+        }
+
+        // Mobile Navigation
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>

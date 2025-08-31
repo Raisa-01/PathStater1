@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Advice - PathStarter</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>PathStarter</h2></a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="jobs.html" class="nav-link">Find Jobs</a>
+                <a href="companies.html" class="nav-link">Company Reviews</a>
+                <a href="employer-post-job.html" class="nav-link">Post a Job</a>
+                <a href="login.html" class="nav-link login-btn">Sign In</a>
+                <a href="signup.html" class="nav-link p-btn">Sign Up</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="job-search-header">
+        <div class="container">
+            <h1>Career Advice & Resources</h1>
+            <p>Expert guidance to accelerate your career journey</p>
+        </div>
+    </section>
+
+    <section class="featured-jobs">
+        <div class="container">
+            <h2>Latest Career Advice</h2>
+            <div class="job-filters">
+                <button class="filter-btn active" data-filter="all">All Articles</button>
+                <button class="filter-btn" data-filter="interviews">Interviews</button>
+                <button class="filter-btn" data-filter="resume">Resume Tips</button>
+                <button class="filter-btn" data-filter="networking">Networking</button>
+                <button class="filter-btn" data-filter="salary">Salary</button>
+                <button class="filter-btn" data-filter="workplace">Workplace</button>
+            </div>
+
+            <div class="jobs-grid">
+                <article class="job-card" data-category="interviews">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="job-info">
+                            <h3>Ace Your Next Job Interview</h3>
+                            <p class="company">Career Expert Lisa Johnson</p>
+                            <p class="location"><i class="fas fa-clock"></i> 10 min read • 2 days ago</p>
+                        </div>
+                        <div class="job-type">New</div>
+                    </div>
+                    <div class="job-details">
+                        <p>Master the art of interviewing with proven strategies for answering tough questions and making a lasting impression.</p>
+                        <div class="job-tags">
+                            <span class="tag">Interview Tips</span>
+                            <span class="tag">Behavioral Questions</span>
+                            <span class="tag">Communication</span>
+                        </div>
+                        <div class="job-footer">
+                            <span class="salary">Free Read</span>
+                            <button class="apply-btn">Read Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="job-card" data-category="resume">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="job-info">
+                            <h3>Resume Optimization Guide 2025</h3>
+                            <p class="company">HR Manager Tom Wilson</p>
+                            <p class="location"><i class="fas fa-clock"></i> 15 min read • 1 week ago</p>
+                        </div>
+                        <div class="job-type">Popular</div>
+                    </div>
+                    <div class="job-details">
+                        <p>Learn how to create an ATS-friendly resume that gets noticed by recruiters and hiring managers.</p>
+                        <div class="job-tags">
+                            <span class="tag">Resume Writing</span>
+                            <span class="tag">ATS Optimization</span>
+                            <span class="tag">Keywords</span>
+                        </div>
+                        <div class="job-footer">
+                            <span class="salary">Free Read</span>
+                            <button class="apply-btn">Read Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="job-card" data-category="networking">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="job-info">
+                            <h3>Building Professional Networks</h3>
+                            <p class="company">Networking Coach Maria Rodriguez</p>
+                            <p class="location"><i class="fas fa-clock"></i> 8 min read • 3 days ago</p>
+                        </div>
+                        <div class="job-type">Featured</div>
+                    </div>
+                    <div class="job-details">
+                        <p>Discover effective strategies for building meaningful professional relationships that advance your career.</p>
+                        <div class="job-tags">
+                            <span class="tag">Professional Networking</span>
+                            <span class="tag">LinkedIn</span>
+                            <span class="tag">Events</span>
+                        </div>
+                        <div class="job-footer">
+                            <span class="salary">Free Read</span>
+                            <button class="apply-btn">Read Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="job-card" data-category="salary">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="job-info">
+                            <h3>Salary Negotiation Strategies</h3>
+                            <p class="company">Compensation Specialist John Davis</p>
+                            <p class="location"><i class="fas fa-clock"></i> 12 min read • 4 days ago</p>
+                        </div>
+                        <div class="job-type">Essential</div>
+                    </div>
+                    <div class="job-details">
+                        <p>Learn how to research, prepare for, and successfully negotiate your salary and benefits package.</p>
+                        <div class="job-tags">
+                            <span class="tag">Salary Negotiation</span>
+                            <span class="tag">Market Research</span>
+                            <span class="tag">Benefits</span>
+                        </div>
+                        <div class="job-footer">
+                            <span class="salary">Premium</span>
+                            <button class="apply-btn">Unlock</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="job-card" data-category="workplace">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="job-info">
+                            <h3>Thriving in Your First Job</h3>
+                            <p class="company">Career Coach Amanda Chen</p>
+                            <p class="location"><i class="fas fa-clock"></i> 7 min read • 5 days ago</p>
+                        </div>
+                        <div class="job-type">Beginner</div>
+                    </div>
+                    <div class="job-details">
+                        <p>Navigate your first professional role with confidence and set yourself up for long-term success.</p>
+                        <div class="job-tags">
+                            <span class="tag">First Job</span>
+                            <span class="tag">Professional Skills</span>
+                            <span class="tag">Career Growth</span>
+                        </div>
+                        <div class="job-footer">
+                            <span class="salary">Free Read</span>
+                            <button class="apply-btn">Read Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="job-card" data-category="interviews">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="job-info">
+                            <h3>Virtual Interview Success</h3>
+                            <p class="company">Tech Recruiter Mike Chen</p>
+                            <p class="location"><i class="fas fa-clock"></i> 6 min read • 1 week ago</p>
+                        </div>
+                        <div class="job-type">Trending</div>
+                    </div>
+                    <div class="job-details">
+                        <p>Master remote interviews with technical setup tips, body language advice, and common question prep.</p>
+                        <div class="job-tags">
+                            <span class="tag">Virtual Interviews</span>
+                            <span class="tag">Remote Work</span>
+                            <span class="tag">Technology</span>
+                        </div>
+                        <div class="job-footer">
+                            <span class="salary">Free Read</span>
+                            <button class="apply-btn">Read Now</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="view-all">
+                <button class="view-all-btn">Load More Articles</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h2>Career Development Resources</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Career Webinars</h3>
+                    <p>Join live sessions with industry experts covering trending topics and career strategies.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>1-on-1 Coaching</h3>
+                    <p>Get personalized career advice from certified career coaches and industry professionals.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Career Guides</h3>
+                    <p>Download comprehensive guides on everything from job searching to career transitions.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Peer Community</h3>
+                    <p>Connect with other professionals, share experiences, and learn from each other's journeys.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PathStarter</h3>
+                    <p>The world's leading job site for students and recent graduates.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/path-starter-75424137b"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/Pathstarter8"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/pathstarter8/"><i class="fab fa-instagram"></i></a>
+                        <a href="http://tiktok.com/@pathstarter8"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Job Seekers</h4>
+                    <ul>
+                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="companies.html">Browse Companies</a></li>
+                        <li><a href="resume-builder.html">Resume Builder</a></li>
+                        <li><a href="career-advice.html">Career Advice</a></li>
+                        <li><a href="post-resume.html">Post Your Resume</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Employers</h4>
+                    <ul>
+                        <li><a href="employer-post-job.html">Post a Job</a></li>
+                        <li><a href="browse-resumes.html">Browse Resumes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="help-center.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PathStarter. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job - PathStarter</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>PathStarter</h2></a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="jobs.html" class="nav-link">Find Jobs</a>
+                <a href="companies.html" class="nav-link">Company Reviews</a>
+                <a href="employer-post-job.html" class="nav-link">Post a Job</a>
+                <a href="login.html" class="nav-link login-btn">Sign In</a>
+                <a href="signup.html" class="nav-link p-btn">Sign Up</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="job-search-header">
+        <div class="container">
+            <h1>Post a Job Opening</h1>
+            <p>Connect with talented students and recent graduates</p>
+        </div>
+    </section>
+
+    <section class="auth-section" style="padding-top: 40px;">
+        <div class="container">
+            <div class="auth-card" style="max-width: 800px; margin: 0 auto;">
+                <div class="auth-header">
+                    <h1>Job Details</h1>
+                    <p>Provide information about your job opening</p>
+                </div>
+
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label for="job-title">Job Title</label>
+                        <input type="text" id="job-title" placeholder="e.g., Software Engineering Intern" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="company-name">Company Name</label>
+                            <input type="text" id="company-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="industry">Industry</label>
+                            <select id="industry" required>
+                                <option value="">Select industry</option>
+                                <option value="technology">Technology</option>
+                                <option value="finance">Finance</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="education">Education</option>
+                                <option value="retail">Retail</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="job-type">Job Type</label>
+                            <select id="job-type" required>
+                                <option value="">Select job type</option>
+                                <option value="full-time">Full-time</option>
+                                <option value="part-time">Part-time</option>
+                                <option value="contract">Contract</option>
+                                <option value="internship">Internship</option>
+                                <option value="freelance">Freelance</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" placeholder="City, State or Remote" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="experience-level">Experience Level</label>
+                            <select id="experience-level" required>
+                                <option value="">Select experience level</option>
+                                <option value="entry">Entry Level</option>
+                                <option value="mid">Mid Level</option>
+                                <option value="senior">Senior Level</option>
+                                <option value="executive">Executive</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="salary-range">Salary Range (Optional)</label>
+                            <input type="text" id="salary-range" placeholder="e.g., $50,000 - $70,000">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="job-description">Job Description</label>
+                        <textarea id="job-description" rows="6" placeholder="Describe the role, responsibilities, and what makes this opportunity exciting..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="requirements">Requirements</label>
+                        <textarea id="requirements" rows="4" placeholder="List the required skills, qualifications, and experience..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="benefits">Benefits & Perks (Optional)</label>
+                        <textarea id="benefits" rows="3" placeholder="Health insurance, flexible schedule, professional development, etc."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="skills">Required Skills/Technologies</label>
+                        <input type="text" id="skills" placeholder="e.g., JavaScript, Python, React, Project Management">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-email">Contact Email</label>
+                            <input type="email" id="contact-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="application-deadline">Application Deadline</label>
+                            <input type="date" id="application-deadline">
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" required>
+                            I agree to the <a href="terms-of-service.html">Terms of Service</a> and <a href="privacy-policy.html">Privacy Policy</a>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            This position is open to students and recent graduates
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            This is a remote-friendly position
+                        </label>
+                    </div>
+
+                    <button type="submit" class="auth-submit-btn">Post Job Opening</button>
+                </form>
+
+                <div class="auth-footer">
+                    <p>Need help? <a href="contact.html">Contact our employer success team</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PathStarter</h3>
+                    <p>The world's leading job site for students and recent graduates.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/path-starter-75424137b"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/Pathstarter8"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/pathstarter8/"><i class="fab fa-instagram"></i></a>
+                        <a href="http://tiktok.com/@pathstarter8"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Job Seekers</h4>
+                    <ul>
+                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="companies.html">Browse Companies</a></li>
+                        <li><a href="resume-builder.html">Resume Builder</a></li>
+                        <li><a href="career-advice.html">Career Advice</a></li>
+                        <li><a href="post-resume.html">Post Your Resume</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Employers</h4>
+                    <ul>
+                        <li><a href="employer-post-job.html">Post a Job</a></li>
+                        <li><a href="browse-resumes.html">Browse Resumes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="help-center.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PathStarter. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

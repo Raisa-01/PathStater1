@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PathStarter - Find Your Future</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>PathStarter</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="jobs.html" class="nav-link">Find Jobs</a>
+                <a href="companies.html" class="nav-link">Company Reviews</a>
+                <a href="employer-post-job.html" class="nav-link">Post a Job</a>
+                <a href="login.html" class="nav-link login-btn">Sign In</a>
+                <a href="signup.html" class="nav-link p-btn">Sign Up</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>From Campus to Career</h1>
+                <p>Discover millions of jobs, salary insights, company reviews, and more with PathStarter's advanced job search.</p>
+                <div class="hero-search">
+                    <div class="search-container">
+                        <input type="text" placeholder="Job title, keywords, or company" class="search-input">
+                        <input type="text" placeholder="City, state, zip code, or 'remote'" class="location-input">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                            Find Jobs
+                        </button>
+                    </div>
+                    <div class="filter-tags">
+                        <span class="tag">$15+ per hour</span>
+                        <span class="tag">Remote</span>
+                        <span class="tag">Part-time</span>
+                        <span class="tag">Internships</span>
+                        <span class="tag">Entry Level</span>
+                        <span class="tag">Student Friendly</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3>2.1M+</h3>
+                    <p>Active Jobs</p>
+                </div>
+                <div class="stat">
+                    <h3>50K+</h3>
+                    <p>Companies</p>
+                </div>
+                <div class="stat">
+                    <h3>18M+</h3>
+                    <p>Monthly Users</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Jobs Section -->
+    <section class="featured-jobs" id="jobs">
+        <div class="container">
+            <h2>Jobs recommended for you</h2>
+            <p class="section-subtitle">Based on your profile and search history</p>
+            <div class="job-filters">
+                <button class="filter-btn active" data-filter="all">All Jobs</button>
+                <button class="filter-btn" data-filter="tech">Technology</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
+                <button class="filter-btn" data-filter="design">Design & Creative</button>
+                <button class="filter-btn" data-filter="writing">Content & Writing</button>
+                <button class="filter-btn" data-filter="data">Data Science</button>
+            </div>
+            <div class="jobs-grid">
+                <div class="job-card" data-category="tech">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <div class="job-info">
+                            <h3>Software Developer Intern</h3>
+                            <p class="company">Microsoft Corporation</p>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Seattle, WA • Remote</p>
+                        </div>
+                        <div class="job-type">Internship</div>
+                    </div>
+                    <div class="job-details">
+                        <p>Join Microsoft's internship program and work on cutting-edge technology projects. Collaborate with senior developers and contribute to products used by billions.</p>
+                        <div class="job-tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">Azure</span>
+                            <span class="tag">.NET</span>
+                            <span class="tag">React</span>
+                        </div>
+                        <div class="job-footer">
+                            <span class="salary">$35-45/hour</span>
+                            <button class="apply-btn">Easy Apply</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job-card" data-category="data">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <div class="job-info">
+                            <h3>Data Science Intern</h3>
+                            <p class="company">Google LLC</p>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Mountain View, CA • Hybrid</p>
+                        </div>
+                        <div class="job-type">Internship</div>
+                    </div>
+                    <div class="job-details">
+                        <p>Work with Google's data science team to analyze large datasets and build machine learning models that impact millions of users worldwide.</p>
+                        <div class="job-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Machine Learning</span>
+                        </div>
+                        <div class="job-footer">
+                            <span class="salary">$40-50/hour</span>
+                            <button class="apply-btn">Easy Apply</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job-card" data-category="design">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <div class="job-info">
+                            <h3>UX Design Intern</h3>
+                            <p class="company">Figma Inc.</p>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> San Francisco, CA • Remote</p>
+                        </div>
+                        <div class="job-type">Internship</div>
+                    </div>
+                    <div class="job-details">
+                        <p>Design intuitive user experiences for Figma's collaborative design platform. Work directly with product teams and conduct user research.</p>
+                        <div class="job-tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">User Research</span>
+                            <span class="tag">Prototyping</span>
+                            <span class="tag">Design Systems</span>
+                        </div>
+                        <div class="job-footer">
+                            <span class="salary">$30-40/hour</span>
+                            <button class="apply-btn">Easy Apply</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job-card" data-category="marketing">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fab fa-spotify"></i>
+                        </div>
+                        <div class="job-info">
+                            <h3>Digital Marketing Intern</h3>
+                            <p class="company">Spotify Technology</p>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> New York, NY • Remote</p>
+                        </div>
+                        <div class="job-type">Internship</div>
+                    </div>
+                    <div class="job-details">
+                        <p>Support Spotify's global marketing campaigns across digital channels. Analyze campaign performance and optimize for user acquisition.</p>
+                        <div class="job-tags">
+                            <span class="tag">Google Ads</span>
+                            <span class="tag">Social Media</span>
+                            <span class="tag">Analytics</span>
+                            <span class="tag">Content Strategy</span>
+                        </div>
+                        <div class="job-footer">
+                            <span class="salary">$25-35/hour</span>
+                            <button class="apply-btn">Easy Apply</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job-card" data-category="writing">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fab fa-medium"></i>
+                        </div>
+                        <div class="job-info">
+                            <h3>Content Writer Intern</h3>
+                            <p class="company">Medium Corporation</p>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> San Francisco, CA • Remote</p>
+                        </div>
+                        <div class="job-type">Part-time</div>
+                    </div>
+                    <div class="job-details">
+                        <p>Create engaging content for Medium's editorial team. Research trending topics and write articles that resonate with our global audience.</p>
+                        <div class="job-tags">
+                            <span class="tag">Content Writing</span>
+                            <span class="tag">SEO</span>
+                            <span class="tag">Research</span>
+                            <span class="tag">Editorial</span>
+                        </div>
+                        <div class="job-footer">
+                            <span class="salary">$22-28/hour</span>
+                            <button class="apply-btn">Easy Apply</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job-card" data-category="tech">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="job-info">
+                            <h3>Frontend Developer</h3>
+                            <p class="company">GitHub Inc.</p>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> San Francisco, CA • Remote</p>
+                        </div>
+                        <div class="job-type">Part-time</div>
+                    </div>
+                    <div class="job-details">
+                        <p>Build responsive web interfaces for GitHub's developer platform. Work with React, TypeScript, and modern frontend technologies.</p>
+                        <div class="job-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">GraphQL</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <div class="job-footer">
+                            <span class="salary">$28-38/hour</span>
+                            <button class="apply-btn">Easy Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+            <a href="jobs.html">
+            <button class="view-all-btn">Show me more jobs</button>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="remote">
+        <div class="container">
+            <h2>Why students choose PathStarter</h2>
+            <p class="section-subtitle">Join millions of students building their careers with us</p>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Matching</h3>
+                    <p>Our advanced AI algorithm matches you with opportunities that fit your skills, interests, and career goals perfectly.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Flexible Opportunities</h3>
+                    <p>Find part-time, remote, and internship positions that work around your class schedule and academic commitments.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Career Acceleration</h3>
+                    <p>Get early access to exclusive opportunities at top companies and fast-track your professional development.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Verified Companies</h3>
+                    <p>All our partner companies are thoroughly vetted to ensure safe, legitimate, and high-quality work experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources" id="resources">
+        <div class="container">
+            <h2>Career development tools</h2>
+            <p class="section-subtitle">Everything you need to land your dream job</p>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Resume Builder</h3>
+                    <p>Create professional resumes with our AI-powered builder. Choose from industry-specific templates and get real-time feedback.</p>
+                     <a href="resume-builder.html" class="nav-link">Build Your Resume →</a>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Interview Prep</h3>
+                    <p>Expert guidance to accelerate your career journey with tips on interviews, networking, and professional growth.</p>
+                    <a href="career-advice.html" class="nav-link">Get Career Tips →</a>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Company Reviews</h3>
+                    <p>Read authentic reviews from current and former employees. Learn about company culture, benefits, and work environment.</p>
+                    <a href="companies.html" class="nav-link">Browse Reviews →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay ahead of the competition</h2>
+            <p>Get personalized job alerts, career insights, and exclusive opportunities delivered to your inbox.</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" class="email-input">
+                <button class="subscribe-btn">Get Job Alerts</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PathStarter</h3>
+                    <p>The world's leading job site for students and recent graduates. Find your path to success.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/path-starter-75424137b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/Pathstarter8"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/pathstarter8/"><i class="fab fa-instagram"></i></a>
+                        <a href="http://tiktok.com/@pathstarter8"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Job Seekers</h4>
+                    <ul>
+                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="companies.html">Browse Companies</a></li>
+                        <li><a href="resume-builder.html">Resume Builder</a></li>
+                        <li><a href="career-advice.html">Career Advice</a></li>
+                        <li><a href="post-resume.html">Post Your Resume</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Employers</h4>
+                    <ul>
+                        <li><a href="employer-post-job.html">Post a Job</a></li>
+                        <li><a href="browse-resumes.html">Browse Resumes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="help-center.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PathStarter. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

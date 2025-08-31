@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PathStarter</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>PathStarter</h2></a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="jobs.html" class="nav-link">Find Jobs</a>
+                <a href="companies.html" class="nav-link">Company Reviews</a>
+                <a href="employer-post-job.html" class="nav-link">Post a Job</a>
+                <a href="login.html" class="nav-link login-btn">Sign In</a>
+                <a href="signup.html" class="nav-link p-btn">Sign Up</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="job-search-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We're here to help you succeed in your career journey</p>
+        </div>
+    </section>
+
+    <section class="auth-section" style="padding-top: 40px;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 1200px; margin: 0 auto;">
+                
+                <!-- Contact Form -->
+                <div class="auth-card">
+                    <div class="auth-header">
+                        <h1>Get in Touch</h1>
+                        <p>Send us a message and we'll respond within 24 hours</p>
+                    </div>
+
+                    <form class="auth-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="job-seeker">Job Seeker Support</option>
+                                <option value="employer">Employer Support</option>
+                                <option value="technical">Technical Issue</option>
+                                <option value="billing">Billing Question</option>
+                                <option value="feature">Feature Request</option>
+                                <option value="partnership">Partnership Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="6" placeholder="Tell us how we can help you..." required></textarea>
+                        </div>
+
+                        <div class="form-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox">
+                                I would like to receive updates about new features and career tips
+                            </label>
+                        </div>
+
+                        <button type="submit" class="auth-submit-btn">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div style="display: flex; flex-direction: column; gap: 24px;">
+                    
+                    <!-- Contact Methods -->
+                    <div class="benefit-card" style="padding: 32px; text-align: left;">
+                        <div class="benefit-icon" style="margin: 0 0 20px 0; width: 48px; height: 48px;">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Customer Support</h3>
+                        <p style="margin-bottom: 16px;">Our support team is available 24/7 to help you with any questions or issues.</p>
+                        <div style="color: var(--accent-color); font-weight: 600;">
+                            <p><i class="fas fa-envelope" style="margin-right: 8px;"></i> support@pathstarter.com</p>
+                            <p style="margin-top: 8px;"><i class="fas fa-phone" style="margin-right: 8px;"></i> 1-800-PATH-START</p>
+                        </div>
+                    </div>
+
+                    <!-- Business Inquiries -->
+                    <div class="benefit-card" style="padding: 32px; text-align: left;">
+                        <div class="benefit-icon" style="margin: 0 0 20px 0; width: 48px; height: 48px;">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Business Partnerships</h3>
+                        <p style="margin-bottom: 16px;">Interested in partnering with us or have a business inquiry?</p>
+                        <div style="color: var(--accent-color); font-weight: 600;">
+                            <p><i class="fas fa-envelope" style="margin-right: 8px;"></i> partnerships@pathstarter.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Office Location -->
+                    <div class="benefit-card" style="padding: 32px; text-align: left;">
+                        <div class="benefit-icon" style="margin: 0 0 20px 0; width: 48px; height: 48px;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Our Office</h3>
+                        <p style="margin-bottom: 16px;">Visit us at our headquarters or schedule a virtual meeting.</p>
+                        <div style="color: var(--text-secondary);">
+                            <p>123 Innovation Drive<br>
+                            San Francisco, CA 94102<br>
+                            United States</p>
+                        </div>
+                    </div>
+
+                    <!-- Response Time -->
+                    <div class="benefit-card" style="padding: 32px; text-align: left;">
+                        <div class="benefit-icon" style="margin: 0 0 20px 0; width: 48px; height: 48px;">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Response Time</h3>
+                        <p style="margin-bottom: 16px;">We pride ourselves on quick response times.</p>
+                        <div style="color: var(--success-color); font-weight: 600;">
+                            <p>• General inquiries: Within 24 hours</p>
+                            <p>• Technical support: Within 4 hours</p>
+                            <p>• Urgent issues: Within 1 hour</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PathStarter</h3>
+                    <p>The world's leading job site for students and recent graduates.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/path-starter-75424137b"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/Pathstarter8"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/pathstarter8/"><i class="fab fa-instagram"></i></a>
+                        <a href="http://tiktok.com/@pathstarter8"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Job Seekers</h4>
+                    <ul>
+                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="companies.html">Browse Companies</a></li>
+                        <li><a href="resume-builder.html">Resume Builder</a></li>
+                        <li><a href="career-advice.html">Career Advice</a></li>
+                        <li><a href="post-resume.html">Post Your Resume</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Employers</h4>
+                    <ul>
+                        <li><a href="employer-post-job.html">Post a Job</a></li>
+                        <li><a href="browse-resumes.html">Browse Resumes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="help-center.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PathStarter. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

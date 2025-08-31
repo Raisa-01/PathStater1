@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Resumes - PathStarter</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>PathStarter</h2></a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="jobs.html" class="nav-link">Find Jobs</a>
+                <a href="companies.html" class="nav-link">Company Reviews</a>
+                <a href="employer-post-job.html" class="nav-link">Post a Job</a>
+                <a href="login.html" class="nav-link login-btn">Sign In</a>
+                <a href="signup.html" class="nav-link p-btn">Sign Up</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="job-search-header">
+        <div class="container">
+            <h1>Browse Talented Candidates</h1>
+            <p>Find qualified students and recent graduates for your open positions</p>
+            <div class="company-search">
+                <input type="text" placeholder="Search by skills, location, or keywords..." class="search-input">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                    Search
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="jobs-filters">
+        <div class="container">
+            <div class="filters-row">
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option>All Experience Levels</option>
+                        <option>Entry Level</option>
+                        <option>Mid Level</option>
+                        <option>Student/Intern</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>All Fields</option>
+                        <option>Technology</option>
+                        <option>Marketing</option>
+                        <option>Design</option>
+                        <option>Finance</option>
+                        <option>Healthcare</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>All Locations</option>
+                        <option>Remote</option>
+                        <option>New York</option>
+                        <option>San Francisco</option>
+                        <option>Chicago</option>
+                        <option>Los Angeles</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>All Education</option>
+                        <option>Bachelor's Degree</option>
+                        <option>Master's Degree</option>
+                        <option>Associate's Degree</option>
+                        <option>High School</option>
+                    </select>
+                </div>
+                <div class="sort-options">
+                    <label>Sort by:</label>
+                    <select class="sort-select">
+                        <option>Relevance</option>
+                        <option>Recently Updated</option>
+                        <option>Experience</option>
+                        <option>Education</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="jobs-results">
+        <div class="container">
+            <div class="results-header">
+                <h2>1,247 candidate profiles found</h2>
+                <p class="results-subtitle">Showing results for your search criteria</p>
+            </div>
+            
+            <div class="jobs-list">
+                <div class="job-card large">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="job-info">
+                            <h3>Sarah Chen</h3>
+                            <p class="company">Computer Science Student • Stanford University</p>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> San Francisco, CA • Open to remote</p>
+                        </div>
+                        <div class="job-actions">
+                            <button class="save-btn"><i class="far fa-heart"></i></button>
+                            <div class="job-type">Available</div>
+                        </div>
+                    </div>
+                    <div class="job-details">
+                        <p>Passionate software engineering student with experience in full-stack development. Seeking internship opportunities in web development and machine learning.</p>
+                        <div class="job-meta">
+                            <span class="meta-item"><i class="fas fa-graduation-cap"></i> Bachelor's in Computer Science</span>
+                            <span class="meta-item"><i class="fas fa-clock"></i> Updated 2 days ago</span>
+                            <span class="meta-item"><i class="fas fa-star"></i> 4.9 rating</span>
+                        </div>
+                        <div class="job-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Machine Learning</span>
+                        </div>
+                        <div class="job-footer">
+                            <span class="salary">Seeking: $25-35/hour</span>
+                            <button class="apply-btn">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job-card large">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="job-info">
+                            <h3>Michael Rodriguez</h3>
+                            <p class="company">Marketing Graduate • UCLA</p>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Los Angeles, CA • Willing to relocate</p>
+                        </div>
+                        <div class="job-actions">
+                            <button class="save-btn"><i class="far fa-heart"></i></button>
+                            <div class="job-type">New Grad</div>
+                        </div>
+                    </div>
+                    <div class="job-details">
+                        <p>Recent marketing graduate with internship experience at Fortune 500 companies. Specialized in digital marketing and data analytics.</p>
+                        <div class="job-meta">
+                            <span class="meta-item"><i class="fas fa-graduation-cap"></i> Bachelor's in Marketing</span>
+                            <span class="meta-item"><i class="fas fa-clock"></i> Updated 1 day ago</span>
+                            <span class="meta-item"><i class="fas fa-briefcase"></i> 2 internships completed</span>
+                        </div>
+                        <div class="job-tags">
+                            <span class="tag">Google Analytics</span>
+                            <span class="tag">Social Media</span>
+                            <span class="tag">Content Strategy</span>
+                            <span class="tag">SEO/SEM</span>
+                        </div>
+                        <div class="job-footer">
+                            <span class="salary">Seeking: $45k-55k/year</span>
+                            <button class="apply-btn">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job-card large">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="job-info">
+                            <h3>Emily Zhang</h3>
+                            <p class="company">Graphic Design Student • RISD</p>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Providence, RI • Remote preferred</p>
+                        </div>
+                        <div class="job-actions">
+                            <button class="save-btn"><i class="far fa-heart"></i></button>
+                            <div class="job-type">Part-time</div>
+                        </div>
+                    </div>
+                    <div class="job-details">
+                        <p>Creative design student with strong skills in UI/UX design and brand identity. Portfolio includes projects for local businesses and startups.</p>
+                        <div class="job-meta">
+                            <span class="meta-item"><i class="fas fa-graduation-cap"></i> BFA in Graphic Design</span>
+                            <span class="meta-item"><i class="fas fa-clock"></i> Updated 5 days ago</span>
+                            <span class="meta-item"><i class="fas fa-award"></i> Dean's List</span>
+                        </div>
+                        <div class="job-tags">
+                            <span class="tag">Adobe Creative Suite</span>
+                            <span class="tag">Figma</span>
+                            <span class="tag">UI/UX Design</span>
+                            <span class="tag">Branding</span>
+                        </div>
+                        <div class="job-footer">
+                            <span class="salary">Seeking: $20-30/hour</span>
+                            <button class="apply-btn">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button class="page-btn" disabled>Previous</button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+                <button class="page-btn">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h2>Why Employers Choose PathStarter</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Pre-Screened Talent</h3>
+                    <p>All candidates are vetted for quality and matched to relevant opportunities.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Fresh Perspectives</h3>
+                    <p>Connect with students and new graduates bringing innovative ideas and energy.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>High Potential</h3>
+                    <p>Invest early in talented individuals who will grow with your company.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Cost Effective</h3>
+                    <p>Competitive rates for entry-level talent with high growth potential.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PathStarter</h3>
+                    <p>The world's leading job site for students and recent graduates.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/path-starter-75424137b"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/Pathstarter8"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/pathstarter8/"><i class="fab fa-instagram"></i></a>
+                        <a href="http://tiktok.com/@pathstarter8"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Job Seekers</h4>
+                    <ul>
+                        <li><a href="jobs.html">Browse Jobs</a></li>
+                        <li><a href="companies.html">Browse Companies</a></li>
+                        <li><a href="resume-builder.html">Resume Builder</a></li>
+                        <li><a href="career-advice.html">Career Advice</a></li>
+                        <li><a href="post-resume.html">Post Your Resume</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Employers</h4>
+                    <ul>
+                        <li><a href="employer-post-job.html">Post a Job</a></li>
+                        <li><a href="browse-resumes.html">Browse Resumes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="help-center.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PathStarter. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
