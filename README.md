@@ -66,7 +66,7 @@ If you wish to use or adapt this project, please contact the author or fork with
 ## 🧪 How to Run Locally
 
 ```bash
-git clone https://github.com/your-username/PathStarter.git
+git clone https://github.com/Raisa-01/PathStarter1.git
 cd PathStarter
 npm install
 node app.js
